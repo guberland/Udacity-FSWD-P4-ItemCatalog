@@ -97,7 +97,7 @@ LiClipse (python3)
 
 ## Versioning
 
-https://github.com/guberland/Udacity-FSWD-Projects
+https://github.com/guberland/Udacity-FSWD-P4-ItemCatalog
 
 ## Authors
 
