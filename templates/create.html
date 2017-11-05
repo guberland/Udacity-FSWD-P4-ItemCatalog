@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}create{% endblock%}
+
+{% block content %}
+    <h1> It's Alive! It's ALIVE!  </h1>
+
+    <form action= "{{url_for('createItem')}}" method = 'POST'>
+    <p>Name:</p>
+
+    <input type = 'text' size='30' name = 'name' placeholder = 'enter the name'>
+    <br>
+    <br>
+    <input type = 'text' size='30' name = 'price' placeholder = 'enter the price'>
+    <br>
+    <br>
+    <textarea name = 'description'>
+    </textarea>
+    <br>
+    <br>
+
+    <select id = "categories" name="category">
+        {% for category in Categories %}
+            <option value='{{category.name}}'> {{category.name}} </option>
+        {% endfor %}
+    </select>
+
+    <br>
+    <br>
+    <input type='submit' value='Create'>
+    </form>
+
+    <br>
+    <button class="goback" onclick="goBack()"> Cancel </a>
+{% endblock%}
